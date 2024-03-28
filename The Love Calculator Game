@@ -1,0 +1,22 @@
+#Greetings
+print("Welcome to the Love Calculator")
+
+name_1 = input("Enter your Name\n").lower()
+
+name_2 = input("Enter Thier Name\n").lower()
+
+True_score = (int(name_1.count("t") + name_1.count("r") + name_1.count("u") + name_1.count("e")) + int(name_2.count("t") + name_2.count("r") + name_2.count("u") + name_2.count("e")))
+
+love_score = (int(name_1.count("l") + name_1.count("o") + name_1.count("v") + name_1.count("e")) + int(name_2.count("l") + name_2.count("o") + name_2.count("v") + name_2.count("e")))
+
+total = int(str(True_score) + str(love_score))
+
+if (total <= 10) or (total >= 90):
+  print(f"Your score is {total},you go together like coke and mentos.")
+elif (total >= 40) and (total <= 50):
+  print(f"Your score is {total}, you are alright together.")
+else:
+  print(total)
+
+
+
